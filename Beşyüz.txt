@@ -1,0 +1,170 @@
+-- GUI elemanlarını ve gerekli ayarları yapalım
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- ScreenGui oluşturuluyor
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+-- Frame: Ana ekran
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0.2, 0, 0.3, 0)  -- Boyutları ayarla
+frame.Position = UDim2.new(0.4, 0, 0.35, 0)  -- Pozisyonu ayarla
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Arka plan rengi
+frame.Parent = screenGui
+
+-- Açma butonu
+local openButton = Instance.new("TextButton")
+openButton.Text = "Aç/Kapat"
+openButton.Size = UDim2.new(0.5, 0, 0.2, 0)
+openButton.Position = UDim2.new(0.25, 0, 0, 0)
+openButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+openButton.Parent = frame
+
+-- Menü butonları
+local jumpButton = Instance.new("TextButton")
+jumpButton.Text = "Jump: 100"
+jumpButton.Size = UDim2.new(0.5, 0, 0.2, 0)
+jumpButton.Position = UDim2.new(0.25, 0, 0.25, 0)
+jumpButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+jumpButton.Parent = frame
+
+local speedButton = Instance.new("TextButton")
+speedButton.Text = "Speed: 100"
+speedButton.Size = UDim2.new(0.5, 0, 0.2, 0)
+speedButton.Position = UDim2.new(0.25, 0, 0.5, 0)
+speedButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+speedButton.Parent = frame
+
+-- Menü gizli olmalı başlangıçta
+frame.Visible = false
+
+-- OpenButton işlevi
+openButton.MouseButton1Click:Connect(function()
+    frame.Visible = not frame.Visible
+end)
+
+-- Jump işlevi
+jumpButton.MouseButton1Click:Connect(function()
+    character.Humanoid.JumpHeight = 100
+    jumpButton.Text = "Jump: 100"
+end)
+
+-- Speed işlevi
+speedButton.MouseButton1Click:Connect(function()
+    character.Humanoid.WalkSpeed = 100
+    speedButton.Text = "Speed: 100"
+end)-- GUI elemanlarını ve gerekli ayarları yapalım
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- ScreenGui oluşturuluyor
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+-- Frame: Ana ekran
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0.2, 0, 0.3, 0)  -- Boyutları ayarla
+frame.Position = UDim2.new(0.4, 0, 0.35, 0)  -- Pozisyonu ayarla
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Arka plan rengi
+frame.Parent = screenGui
+
+-- Açma butonu
+local openButton = Instance.new("TextButton")
+openButton.Text = "Aç/Kapat"
+openButton.Size = UDim2.new(0.5, 0, 0.2, 0)
+openButton.Position = UDim2.new(0.25, 0, 0, 0)
+openButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+openButton.Parent = frame
+
+-- Menü butonları
+local jumpButton = Instance.new("TextButton")
+jumpButton.Text = "Jump: 100"
+jumpButton.Size = UDim2.new(0.5, 0, 0.2, 0)
+jumpButton.Position = UDim2.new(0.25, 0, 0.25, 0)
+jumpButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+jumpButton.Parent = frame
+
+local speedButton = Instance.new("TextButton")
+speedButton.Text = "Speed: 100"
+speedButton.Size = UDim2.new(0.5, 0, 0.2, 0)
+speedButton.Position = UDim2.new(0.25, 0, 0.5, 0)
+speedButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+speedButton.Parent = frame
+
+-- Menü gizli olmalı başlangıçta
+frame.Visible = false
+
+-- OpenButton işlevi
+openButton.MouseButton1Click:Connect(function()
+    frame.Visible = not frame.Visible
+end)
+
+-- Jump işlevi
+jumpButton.MouseButton1Click:Connect(function()
+    character.Humanoid.JumpHeight = 100
+    jumpButton.Text = "Jump: 100"
+end)
+
+-- Speed işlevi
+speedButton.MouseButton1Click:Connect(function()
+    character.Humanoid.WalkSpeed = 100
+    speedButton.Text = "Speed: 100"
+end)
+-- GUI elemanlarını ve gerekli ayarları yapalım
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- ScreenGui oluşturuluyor
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+-- Frame: Ana ekran
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0.2, 0, 0.3, 0)  -- Boyutları ayarla
+frame.Position = UDim2.new(0.4, 0, 0.35, 0)  -- Pozisyonu ayarla
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)  -- Arka plan rengi
+frame.Parent = screenGui
+
+-- Açma butonu
+local openButton = Instance.new("TextButton")
+openButton.Text = "Aç/Kapat"
+openButton.Size = UDim2.new(0.5, 0, 0.2, 0)
+openButton.Position = UDim2.new(0.25, 0, 0, 0)
+openButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+openButton.Parent = frame
+
+-- Menü butonları
+local jumpButton = Instance.new("TextButton")
+jumpButton.Text = "Jump: 100"
+jumpButton.Size = UDim2.new(0.5, 0, 0.2, 0)
+jumpButton.Position = UDim2.new(0.25, 0, 0.25, 0)
+jumpButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+jumpButton.Parent = frame
+
+local speedButton = Instance.new("TextButton")
+speedButton.Text = "Speed: 100"
+speedButton.Size = UDim2.new(0.5, 0, 0.2, 0)
+speedButton.Position = UDim2.new(0.25, 0, 0.5, 0)
+speedButton.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+speedButton.Parent = frame
+
+-- Menü gizli olmalı başlangıçta
+frame.Visible = false
+
+-- OpenButton işlevi
+openButton.MouseButton1Click:Connect(function()
+    frame.Visible = not frame.Visible
+end)
+
+-- Jump işlevi
+jumpButton.MouseButton1Click:Connect(function()
+    character.Humanoid.JumpHeight = 100
+    jumpButton.Text = "Jump: 100"
+end)
+
+-- Speed işlevi
+speedButton.MouseButton1Click:Connect(function()
+    character.Humanoid.WalkSpeed = 100
+    speedButton.Text = "Speed: 100"
+end)
